@@ -33,7 +33,7 @@ class BLOCKFILE_VALIDATION_TEST < Minitest::Test
 
 	#Blockchain increments by 1
 	#should return true
-	def test_blockchain_increments
+	def test_blockchain_increments_true
 		String test_str = '0|0|SYSTEM>Henry(100)|1518892051.737141000|1c12
 1|1c12|SYSTEM>George(100)|1518892051.740967000|abb2
 2|abb2|George>Amina(16):Henry>James(4):Henry>Cyrus(17):Henry>Kublai(4):George>Rana(1):SYSTEM>Wu(100)|1518892051.753197000|c72d
@@ -60,7 +60,7 @@ class BLOCKFILE_VALIDATION_TEST < Minitest::Test
 
 	#Blockchain increments by 1
 	#should return true
-	def test_blockchain_increments
+	def test_blockchain_increments_false
 		String test_str = '0|0|SYSTEM>Henry(100)|1518892051.737141000|1c12
 1|1c12|SYSTEM>George(100)|1518892051.740967000|abb2
 2|abb2|George>Amina(16):Henry>James(4):Henry>Cyrus(17):Henry>Kublai(4):George>Rana(1):SYSTEM>Wu(100)|1518892051.753197000|c72d
